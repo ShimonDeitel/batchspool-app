@@ -8,14 +8,7 @@ struct Spool: Identifiable, Codable, Equatable {
     var quantityLeft: String
     var createdDate: Date
 
-    init(
-        id: UUID = UUID(),
-        brand: String = "DMC",
-        colorNumber: String = "310",
-        colorName: String = "Black",
-        quantityLeft: String = "8",
-        createdDate: Date = Date()
-    ) {
+    init(id: UUID = UUID(), brand: String = "DMC", colorNumber: String = "310", colorName: String = "Black", quantityLeft: String = "8", createdDate: Date = Date()) {
         self.id = id
         self.brand = brand
         self.colorNumber = colorNumber
@@ -34,14 +27,7 @@ struct BSProEntry: Identifiable, Codable, Equatable {
     var lowStockThreshold: String
     var createdDate: Date
 
-    init(
-        id: UUID = UUID(),
-        projectName: String = "Sampler",
-        colorNumber: String = "310",
-        yardsNeeded: String = "4",
-        lowStockThreshold: String = "3",
-        createdDate: Date = Date()
-    ) {
+    init(id: UUID = UUID(), projectName: String = "Sampler", colorNumber: String = "310", yardsNeeded: String = "4", lowStockThreshold: String = "3", createdDate: Date = Date()) {
         self.id = id
         self.projectName = projectName
         self.colorNumber = colorNumber
