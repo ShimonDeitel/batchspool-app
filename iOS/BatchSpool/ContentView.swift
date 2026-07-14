@@ -174,9 +174,9 @@ struct SpoolFormView: View {
     private func save() {
         switch mode {
         case .add:
-            store.addSpool(draftBrand, draftColorNumber, draftColorName, draftQuantityLeft, isPro: purchases.isPro)
+            store.addSpool(brand: draftBrand, colorNumber: draftColorNumber, colorName: draftColorName, quantityLeft: draftQuantityLeft, isPro: purchases.isPro)
         case .edit(let item):
-            store.updateSpool(item.id, draftBrand, draftColorNumber, draftColorName, draftQuantityLeft)
+            store.updateSpool(item.id, brand: draftBrand, colorNumber: draftColorNumber, colorName: draftColorName, quantityLeft: draftQuantityLeft)
         }
         BSHaptics.success()
         dismiss()
